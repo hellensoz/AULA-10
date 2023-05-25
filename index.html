@@ -1,1 +1,25 @@
+
+<!--
+This code will display a form,
+which will save data to the Spreadsheet within Sheet "Página1".
+-->
+<form data-spreadsheet-api="https://sheet2api.com/v1/WgJCn8bqSfK1/jotform-vacas/P%25C3%25A1gina1">
+    <input type="text" name="NOME" placeholder="Nome" />
+    <input type="text" name="N° VACAS ADOTADAS" placeholder="N° Vacas Adotadas" />
+    <button type="submit" onClick="alert('Submitted')">Submit</button>
+</form>
+<script src="https://sheet2api.com/v1/template.js"></script>
+
+<!--Jotform -->
 <script type="text/javascript" src="https://form.jotform.com/jsform/231438224581656"></script>
+
+<!-- Listagem -->
+<!--
+This code will list the contents of your Spreadsheet
+Sheet "Página1" onto the web page.
+-->
+<div data-spreadsheet-api="https://sheet2api.com/v1/WgJCn8bqSfK1/jotform-vacas/P%25C3%25A1gina1">
+    <div><b>Nome:</b>{{NOME}}</div>
+    <div><b>N° Vacas Adotadas:</b>{{N° VACAS ADOTADAS}}</div>
+</div>
+<script src="https://sheet2api.com/v1/template.js"></script>
